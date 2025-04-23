@@ -30,6 +30,16 @@
         </div>
     </nav>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+      
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+          hamburger.classList.toggle('open');
+        });
+    </script>
+
     <!-- Services Hero Section -->
     <section class="services-hero">
         <div class="container">
