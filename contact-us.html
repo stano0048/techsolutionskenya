@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Tech Ascent Kenya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="https://techsolutionskenya.vercel.app" class="logo">TechAscent<span>KE</span></a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="https://techsolutionskenya.vercel.app" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="our-services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="about-us" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="our-portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="contact-us" class="nav-link active">Contact</a></li>
+                <li class="nav-item cta-button"><a href="contact-us#inquiry" class="nav-link">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title">Let's Build Something <span>Great Together</span></h1>
+                <p class="contact-hero-subtitle">Have a project in mind? Need a tech partner you can trust? We're here to bring your vision to life — fast, professionally, and with a personal touch.</p>
+                <div class="contact-methods">
+                    <a href="#inquiry" class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>Send Message</span>
+                    </a>
+                    <a href="https://wa.me/254746640048" class="contact-method" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp Chat</span>
+                    </a>
+                    <a href="#meeting" class="contact-method">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Book Meeting</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-hero-image">
+                <div class="floating-contacts">
+                    <div class="contact-card email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Us</span>
+                    </div>
+                    <div class="contact-card phone">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Us</span>
+                    </div>
+                    <div class="contact-card location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Our Location</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Inquiry Section -->
+    <section class="inquiry-section" id="inquiry">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Quick <span>Inquiry Form</span></h2>
+                <p class="section-subtitle">Tell us a bit about your project. We'll get back to you within 24 hours.</p>
+            </div>
+            
+            <form class="contact-form" action="https://formspree.io/f/xwpokbok" method="POST" id="project-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder=" " required>
+                    <label for="name">Your Full Name</label>
+                    <div class="form-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder=" " required>
+                    <label for="email">Your Email Address</label>
+                    <div class="form-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" name="subject" id="subject" placeholder=" ">
+                    <label for="subject">Subject (Optional)</label>
+                    <div class="form-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group textarea-group">
+                    <textarea name="message" id="message" placeholder=" " required></textarea>
+                    <label for="message">Tell us about your project...</label>
+                    <div class="form-icon">
+                        <i class="fas fa-comment-alt"></i>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn primary submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                
+                <div class="form-footer">
+                    <p>We respect your privacy. Your information will not be shared.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods-section">
+        <div class="container">
+            <div class="contact-methods-grid">
+                <!-- WhatsApp Card -->
+                <div class="contact-method-card whatsapp">
+                    <div class="method-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Chat with Us on WhatsApp</h3>
+                    <p>Need a quick reply? We're available on WhatsApp for instant communication.</p>
+                    <a href="https://wa.me/254746640048" class="btn secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Start WhatsApp Chat
+                    </a>
+                </div>
+                
+                <!-- Location Card -->
+                <div class="contact-method-card location">
+                    <div class="method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>Ngong Town, Nairobi, Kenya</p>
+                    <div class="mini-map" id="mini-map"></div>
+                    <a href="https://www.google.com/maps/place/Vet+stop/@-1.3424193,36.656004,15z/data=!4m6!3m5!1s0x182f1ccc56e71489:0x64efe42e14fc4003!8m2!3d-1.3424266!4d36.6665402!16s%2Fg%2F1tcvln9w?entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="btn outline" target="_blank">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+                
+                <!-- Email & Phone Card -->
+                <div class="contact-method-card email-phone">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email & Phone</h3>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:stanleymakanga45@gmail.com">stanleymakanga45@gmail.com</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254721991529">+254 721 991 529</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254746640048">+254 746 640 048</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Stay Connected</span>
+                <h2 class="section-title">Connect With Us on <span>Socials</span></h2>
+            </div>
+            
+            <div class="social-grid">
+                <a href="#" class="social-card linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Professional updates & network</p>
+                </a>
+                
+                <a href="#" class="social-card instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Project highlights & behind the scenes</p>
+                </a>
+                
+                <a href="#" class="social-card github" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Explore our open source code</p>
+                </a>
+                
+                <a href="#" class="social-card twitter" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter</h3>
+                    <p>Tech insights & announcements</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers-section" id="careers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Join Our Team</span>
+                <h2 class="section-title">🤝 <span>Careers</span> at Tech Ascent</h2>
+                <p class="section-subtitle">Are you a developer, designer, strategist, or tech enthusiast? Let's grow together.</p>
+            </div>
+            
+            <form class="careers-form" action="https://formspree.io/f/xwpokbok" method="POST" id="careers-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="full-name" id="full-name" placeholder=" " required>
+                        <label for="full-name">Full Name</label>
+                        <div class="form-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="career-email" id="career-email" placeholder=" " required>
+                        <label for="career-email">Email Address</label>
+                        <div class="form-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" name="position" id="position" placeholder=" " required>
+                    <label for="position">Position You're Applying For</label>
+                    <div class="form-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group textarea-group">
+                    <textarea name="why-join" id="why-join" placeholder=" " required></textarea>
+                    <label for="why-join">Why do you want to join our team?</label>
+                    <div class="form-icon">
+                        <i class="fas fa-question"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group textarea-group">
+                    <textarea name="skills" id="skills" placeholder=" " required></textarea>
+                    <label for="skills">What skills or tools are you most confident with?</label>
+                    <div class="form-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group textarea-group">
+                    <textarea name="experience" id="experience" placeholder=" " required></textarea>
+                    <label for="experience">Tell us about a project you're proud of (link if possible)</label>
+                    <div class="form-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group file-group">
+                    <label for="resume">Upload Resume/CV (PDF, max 5MB)</label>
+                    <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx">
+                    <div class="file-upload">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Choose file</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn primary submit-btn">
+                    <span class="btn-text">Apply Now</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Meeting Section -->
+    <section class="meeting-section" id="meeting">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Schedule a Consultation</span>
+                <h2 class="section-title">📅 Book a <span>Meeting</span></h2>
+                <p class="section-subtitle">Let's connect for a consultation — in person or virtually.</p>
+            </div>
+            
+            <div class="meeting-container">
+                <div class="meeting-form-container">
+                    <form class="meeting-form" action="https://formspree.io/f/xwpokbok" method="POST" id="meeting-form">
+                        <div class="form-group">
+                            <input type="text" name="meeting-name" id="meeting-name" placeholder=" " required>
+                            <label for="meeting-name">Your Name</label>
+                            <div class="form-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="meeting-email" id="meeting-email" placeholder=" " required>
+                            <label for="meeting-email">Your Email</label>
+                            <div class="form-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="meeting-date">Preferred Date & Time</label>
+                            <input type="datetime-local" name="meeting-date" id="meeting-date" required>
+                            <div class="form-icon">
+                                <i class="fas fa-calendar-day"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>Meeting Type:</label>
+                            <div class="checkbox-options">
+                                <label class="checkbox-option">
+                                    <input type="radio" name="meeting-type" value="Virtual Meeting" checked>
+                                    <span class="checkmark"></span>
+                                    Virtual Meeting
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="radio" name="meeting-type" value="Physical Meeting">
+                                    <span class="checkmark"></span>
+                                    Physical Meeting
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group textarea-group">
+                            <textarea name="meeting-notes" id="meeting-notes" placeholder=" "></textarea>
+                            <label for="meeting-notes">Anything else we should know?</label>
+                            <div class="form-icon">
+                                <i class="fas fa-sticky-note"></i>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn primary submit-btn">
+                            <span class="btn-text">Schedule Meeting</span>
+                            <i class="fas fa-calendar-check"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="meeting-info">
+                        <h3>After booking:</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> We'll send a confirmation email</li>
+                            <li><i class="fas fa-check-circle"></i> Google Calendar invite included</li>
+                            <li><i class="fas fa-check-circle"></i> Meeting reminders before the session</li>
+                        </ul>
+                        <div class="support-info">
+                            <p><strong>Need help filling anything out?</strong></p>
+                            <div class="support-links">
+                                <a href="tel:+254721991529" class="support-link">
+                                    <i class="fas fa-phone"></i> Call Us Now
+                                </a>
+                                <a href="https://wa.me/254746640048" class="support-link" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp Chat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="meeting-location">
+                    <h3>Our Office Location</h3>
+                    <div class="full-map" id="full-map"></div>
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ngong Town, Nairobi, Kenya</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-parking"></i>
+                            <span>Secure parking available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TechAscent<span>KE</span></h3>
+                    <p>Building digital solutions that drive growth, innovation, and success for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Game Development</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">AI Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://techsolutionskenya.vercel.app">Home</a></li>
+                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="contact-us#careers-form">Careers</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact-us">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 721 991529</li>
+                        <li><i class="fas fa-envelope"></i> stanleymakanga45@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Ascent Kenya. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy">Privacy Policy</a>
+                    <a href="terms-of-service">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS for Map -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

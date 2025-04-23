@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | Tech Ascent Kenya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="https://techsolutionskenya.vercel.app" class="logo">TechAscent<span>KE</span></a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="https://techsolutionskenya.vercel.app" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="our-services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="about-us" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="our-portfolio" class="nav-link active">Portfolio</a></li>
+                <li class="nav-item"><a href="contact-us" class="nav-link">Contact</a></li>
+                <li class="nav-item cta-button"><a href="contact-us#inquiry" class="nav-link">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-hero-content">
+                <h1 class="portfolio-hero-title">Turning Vision into <span>Digital Reality</span></h1>
+                <p class="portfolio-hero-subtitle">We pride ourselves on delivering smart, scalable, and high-performing solutions. Below is a curated selection of projects that highlight our capabilities across web, mobile, gaming, automation, and blockchain.</p>
+                <div class="portfolio-scroll-down">
+                    <span>View our work</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="portfolio-hero-image">
+                <div class="portfolio-mockups">
+                    <div class="mockup web">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Web Project">
+                    </div>
+                    <div class="mockup mobile">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mobile Project">
+                    </div>
+                    <div class="mockup game">
+                        <img src="trading-bot.jpg" alt="Game Project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter" id="portfolio">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="game">Gaming</button>
+                <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                <button class="filter-btn" data-filter="ai">AI/Automation</button>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search projects..." id="project-search">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="grid-container">
+                <!-- Project 1 - E-Commerce -->
+                <div class="portfolio-item" data-category="web" data-tags="ecommerce php mysql payment-gateway">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="E-Commerce Shop">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Screenshot"><i class="fas fa-image"></i></a>
+                                <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="portfolio-tag">Featured</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-number">01</div>
+                            <h3>E-Commerce Shop</h3>
+                            <div class="portfolio-tech">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>M-Pesa</span>
+                            </div>
+                            <p>A full-featured online shopping platform built for speed, scalability, and security with M-Pesa and card payment integration.</p>
+                            <div class="portfolio-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Dynamic product listing & categories</li>
+                                    <li>Customer registration & order tracking</li>
+                                    <li>Responsive mobile-friendly design</li>
+                                    <li>Real-time M-Pesa payment validation</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn outline">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Spin & Win Game -->
+                <div class="portfolio-item" data-category="game" data-tags="web-game real-money mpesa">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="win-games.webp" alt="Spin & Win Game">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Screenshot"><i class="fas fa-image"></i></a>
+                                <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-number">02</div>
+                            <h3>Spin & Win Game</h3>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>JavaScript</span>
+                                <span>M-Pesa</span>
+                            </div>
+                            <p>A sleek, web-based real-money game with fun animations, real payout logic, and integrated M-Pesa withdrawals.</p>
+                            <div class="portfolio-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Instant-win logic with variable rewards</li>
+                                    <li>Gamified UI/UX with sound & motion</li>
+                                    <li>Integrated transaction engine</li>
+                                    <li>Admin panel to monitor plays</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn outline">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Crypto Trading Bot -->
+                <div class="portfolio-item" data-category="ai blockchain" data-tags="python crypto trading automation">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="crypto-trading-bots.jpg" alt="Crypto Trading Bot">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Screenshot"><i class="fas fa-image"></i></a>
+                                <a href="#" class="portfolio-link" title="Request Info"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                            <div class="portfolio-tag">Proprietary</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-number">03</div>
+                            <h3>Crypto Trading Bot</h3>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>Binance API</span>
+                                <span>AI</span>
+                            </div>
+                            <p>An intelligent trading bot that uses technical indicators and trend analysis to execute trades automatically.</p>
+                            <div class="portfolio-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Automated strategy execution</li>
+                                    <li>MACD, RSI, Bollinger Bands</li>
+                                    <li>Backtest and simulation dashboard</li>
+                                    <li>Telegram alerts</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn outline">Request Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - AI WhatsApp Bot -->
+                <div class="portfolio-item" data-category="ai" data-tags="chatbot whatsapp gpt openai">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="ai-whatsapp-bot.jpeg" alt="AI WhatsApp Bot">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Screenshot"><i class="fas fa-image"></i></a>
+                                <a href="#" class="portfolio-link" title="View on GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="portfolio-tag">Open Source</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-number">04</div>
+                            <h3>AI WhatsApp Bot</h3>
+                            <div class="portfolio-tech">
+                                <span>GPT-4</span>
+                                <span>Node.js</span>
+                                <span>Twilio</span>
+                            </div>
+                            <p>A GPT-powered customer support assistant that runs on WhatsApp, trained on your business data.</p>
+                            <div class="portfolio-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Instant answers to FAQs</li>
+                                    <li>WhatsApp Business API integration</li>
+                                    <li>Natural language understanding</li>
+                                    <li>Easy knowledge base updates</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn outline">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - NFT Marketplace -->
+                <div class="portfolio-item" data-category="blockchain" data-tags="nft ethereum solidity web3">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="NFT Marketplace">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Screenshot"><i class="fas fa-image"></i></a>
+                                <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-number">05</div>
+                            <h3>NFT Marketplace</h3>
+                            <div class="portfolio-tech">
+                                <span>Ethereum</span>
+                                <span>Solidity</span>
+                                <span>React</span>
+                            </div>
+                            <p>A full-featured NFT marketplace with minting, bidding, and collection management features.</p>
+                            <div class="portfolio-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>ERC-721 token standard</li>
+                                    <li>WalletConnect integration</li>
+                                    <li>Royalty system for creators</li>
+                                    <li>Gas optimization</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn outline">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Mobile Banking App -->
+                <div class="portfolio-item" data-category="mobile" data-tags="flutter banking finance mobile-app">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mobile Banking App">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Screenshot"><i class="fas fa-image"></i></a>
+                                <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="portfolio-tag">NDA Protected</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-number">06</div>
+                            <h3>Mobile Banking App</h3>
+                            <div class="portfolio-tech">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>M-Pesa</span>
+                            </div>
+                            <p>A cross-platform banking application with biometric authentication and real-time transaction processing.</p>
+                            <div class="portfolio-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Fingerprint/Face ID login</li>
+                                    <li>Instant money transfers</li>
+                                    <li>Bill payments and airtime</li>
+                                    <li>Transaction history</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn outline">Request Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio CTA -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Looking to Build Something Similar?</h2>
+                <p>We can clone, customize, or completely reimagine any of these projects to suit your unique needs.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/254746640048" class="btn primary" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a href="contact-us#inquiry" class="btn secondary">Request a Free Quote</a>
+                </div>
+            </div>
+            <div class="tech-bubbles">
+                <div class="bubble" style="--size: 60px; --delay: 0s; --duration: 15s; --distance: 50px;"></div>
+                <div class="bubble" style="--size: 40px; --delay: 2s; --duration: 12s; --distance: 70px;"></div>
+                <div class="bubble" style="--size: 50px; --delay: 4s; --duration: 18s; --distance: 60px;"></div>
+                <div class="bubble" style="--size: 30px; --delay: 1s; --duration: 14s; --distance: 80px;"></div>
+                <div class="bubble" style="--size: 45px; --delay: 3s; --duration: 16s; --distance: 55px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TechAscent<span>KE</span></h3>
+                    <p>Building digital solutions that drive growth, innovation, and success for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Game Development</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">AI Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://techsolutionskenya.vercel.app">Home</a></li>
+                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="contact-us#careers-form">Careers</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact-us">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 721 991529</li>
+                        <li><i class="fas fa-envelope"></i> stanleymakanga45@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Ascent Kenya. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy">Privacy Policy</a>
+                    <a href="terms-of-service">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
