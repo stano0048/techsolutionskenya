@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Tech Solutions Kenya</title>
+    <link rel="stylesheet" href="404.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="https://techsolutionskenya.vercel.app" class="logo">TechAscent<span>KE</span></a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="https://techsolutionskenya.vercel.app" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="our-services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="about-us" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="pricing-plans" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="our-portfolio" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact-us" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="faq" class="nav-link">FAQs</a></li>
+                <li class="nav-item cta-button"><a href="contact-us#inquiry" class="nav-link">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+      
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+          hamburger.classList.toggle('open');
+        });
+    </script>
+
+    <main class="error-main">
+        <section class="error-content">
+            <div class="container">
+                <div class="error-illustration">
+                    <div class="error-404">404</div>
+                    <div class="astronaut">
+                        <img src="astronaut-removebg-preview.png" style="z-index: 1;" alt="Astronaut illustration">
+                    </div>
+                </div>
+                <h1>Lost in Space</h1>
+                <p>The page you're looking for doesn't exist or has been moved.</p>
+                <div class="cta-buttons">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Return Home
+                    </a>
+                    <a href="contact-us" class="btn btn-secondary">
+                        <i class="fas fa-headset"></i> Get Help
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TechAscent<span>KE</span></h3>
+                    <p>Building digital solutions that drive growth, innovation, and success for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Game Development</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">AI Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://techsolutionskenya.vercel.app">Home</a></li>
+                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="contact-us#careers-form">Careers</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact-us">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 721 991529</li>
+                        <li><i class="fas fa-envelope"></i> stanleymakanga45@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Ascent Kenya. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy">Privacy Policy</a>
+                    <a href="terms-of-service">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="404.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Base Styles */
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --accent: #3b82f6;
+    --text: #333;
+    --light-text: #6b7280;
+    --white: #ffffff;
+    --light-bg: #f9fafb;
+    --border: #e5e7eb;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Header Styles (same as other pages) */
+/* ... */
+
+/* Error Content */
+.error-main {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: var(--light-bg);
+}
+
+.error-content {
+    text-align: center;
+    width: 100%;
+}
+
+.error-illustration {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.error-404 {
+    font-size: 15rem;
+    font-weight: 900;
+    color: rgba(37, 99, 235, 0.1);
+    line-height: 1;
+    user-select: none;
+}
+
+.astronaut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.astronaut img {
+    width: 80%;
+    height: auto;
+}
+
+.error-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.error-content p {
+    font-size: 1.2rem;
+    color: var(--light-text);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--light-bg);
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translate(-50%, -50%) translateY(0px); }
+    50% { transform: translate(-50%, -50%) translateY(-20px); }
+    100% { transform: translate(-50%, -50%) translateY(0px); }
+}
+
+/* Footer Styles (same as other pages) */
+/* ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .error-404 {
+        font-size: 10rem;
+    }
+
+    .astronaut {
+        width: 150px;
+    }
+
+    .error-content h1 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-404 {
+        font-size: 8rem;
+    }
+
+    .astronaut {
+        width: 100px;
+    }
+}
