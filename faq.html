@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Tech Solutions Kenya</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="https://techsolutionskenya.vercel.app" class="logo">TechAscent<span>KE</span></a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="https://techsolutionskenya.vercel.app" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="our-services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="about-us" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="our-portfolio" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact-us" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="faq" class="nav-link active">FAQs</a></li>
+                <li class="nav-item cta-button"><a href="contact-us#inquiry" class="nav-link">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+      
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+          hamburger.classList.toggle('open');
+        });
+    </script>
+
+    <main class="faq-main">
+        <section class="faq-hero">
+            <div class="container">
+                <h1 class="slide-in">Frequently Asked Questions</h1>
+                <p class="slide-in">Here's everything you need to know before working with us. Can't find your question? <a href="contact.html">Contact us directly</a> — we're happy to help!</p>
+            </div>
+        </section>
+
+        <section class="faq-container container">
+            <div class="faq-item slide-up">
+                <div class="faq-question">
+                    <h3>How long does a typical project take?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Project timelines vary depending on the scope and complexity.</p>
+                    <ul>
+                        <li><strong>Basic Website:</strong> 1-2 weeks</li>
+                        <li><strong>Custom Web App:</strong> 2-4 weeks</li>
+                        <li><strong>Mobile App:</strong> 3-6 weeks</li>
+                        <li><strong>Trading Bots or AI Tools:</strong> 2-5 weeks</li>
+                    </ul>
+                    <p>We'll give you a personalized timeline during your consultation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item slide-up">
+                <div class="faq-question">
+                    <h3>What payment methods do you accept?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept multiple payment options to ensure convenience:</p>
+                    <ul>
+                        <li>M-Pesa (Till or Paybill)</li>
+                        <li>Bank Transfer (Local or International)</li>
+                        <li>PayPal</li>
+                        <li>Crypto (BTC, USDT, etc.)</li>
+                    </ul>
+                    <p>We usually work on a 50/50 model: 50% upfront and 50% upon delivery. For larger projects, we can discuss milestone-based payments.</p>
+                </div>
+            </div>
+
+            <div class="faq-item slide-up">
+                <div class="faq-question">
+                    <h3>How do I get started with a project?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Getting started is simple:</p>
+                    <ol>
+                        <li><strong>Reach Out:</strong> Use the contact form or WhatsApp us.</li>
+                        <li><strong>Consultation:</strong> We'll schedule a call to understand your needs.</li>
+                        <li><strong>Proposal & Quote:</strong> We send a detailed proposal with pricing and timelines.</li>
+                        <li><strong>Onboarding:</strong> Once we agree, we begin your project and keep you in the loop.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="faq-item slide-up">
+                <div class="faq-question">
+                    <h3>What's your revisions policy?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We include up to 3 rounds of free revisions in every project to ensure your satisfaction.</p>
+                    <p>Additional revisions beyond this may incur a small fee, depending on the scope of change.</p>
+                    <p>We always aim for perfection the first time — but we're flexible and open to tweaks.</p>
+                </div>
+            </div>
+
+            <div class="faq-item slide-up">
+                <div class="faq-question">
+                    <h3>Do you offer maintenance after project completion?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer three maintenance packages:</p>
+                    <ul>
+                        <li><strong>Basic:</strong> Security updates and bug fixes</li>
+                        <li><strong>Standard:</strong> Basic + performance optimization</li>
+                        <li><strong>Premium:</strong> Standard + content updates and 24/7 support</li>
+                    </ul>
+                    <p>All new projects come with 1 month free basic maintenance.</p>
+                </div>
+            </div>
+
+            <div class="faq-item slide-up">
+                <div class="faq-question">
+                    <h3>What technologies do you specialize in?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Our core technologies include:</p>
+                    <ul>
+                        <li><strong>Web:</strong> React, Node.js, Python (Django/Flask)</li>
+                        <li><strong>Mobile:</strong> Flutter, React Native</li>
+                        <li><strong>AI/ML:</strong> TensorFlow, PyTorch</li>
+                        <li><strong>Blockchain:</strong> Solidity, Web3.js</li>
+                        <li><strong>Automation:</strong> Python, Selenium, Zapier</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="slide-up">Still have questions?</h2>
+                <p class="slide-up">We're here to help you with any questions about our services or process.</p>
+                <a href="contact.html" class="btn slide-up">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TechAscent<span>KE</span></h3>
+                    <p>Building digital solutions that drive growth, innovation, and success for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Game Development</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">AI Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://techsolutionskenya.vercel.app">Home</a></li>
+                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="contact-us#careers-form">Careers</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact-us">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 721 991529</li>
+                        <li><i class="fas fa-envelope"></i> stanleymakanga45@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Ascent Kenya. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy">Privacy Policy</a>
+                    <a href="terms-of-service">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="faq.js"></script>
+    
+</body>
+</html>

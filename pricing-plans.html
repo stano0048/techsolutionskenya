@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Tech Solutions Kenya</title>
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="https://techsolutionskenya.vercel.app" class="logo">TechAscent<span>KE</span></a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="https://techsolutionskenya.vercel.app" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="our-services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="about-us" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="pricing-plans" class="nav-link active">Pricing</a></li>
+                <li class="nav-item"><a href="our-portfolio" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact-us" class="nav-link">Contact</a></li>
+                <li class="nav-item cta-button"><a href="contact-us#inquiry" class="nav-link">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+      
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+          hamburger.classList.toggle('open');
+        });
+    </script>
+
+    <main class="pricing-main">
+        <section class="pricing-hero">
+            <div class="container">
+                <h1 class="slide-in">Transparent Pricing That Works for You</h1>
+                <p class="slide-in">Whether you're a startup or a growing brand, we have flexible packages to match your budget and goals.</p>
+            </div>
+        </section>
+
+        <section class="pricing-cards container">
+            <div class="pricing-card slide-up">
+                <div class="card-header">
+                    <h3>Starter Plan</h3>
+                    <p>Perfect for individuals and small businesses</p>
+                    <div class="price">
+                        <span>$350–$700</span>
+                        <span>KES 45,000–90,000</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 3–5 Page Website</li>
+                        <li><i class="fas fa-check-circle"></i> Mobile Responsive Design</li>
+                        <li><i class="fas fa-check-circle"></i> Basic SEO Setup</li>
+                        <li><i class="fas fa-check-circle"></i> 1 Revision</li>
+                        <li><i class="fas fa-check-circle"></i> M-Pesa Integration (if needed)</li>
+                        <li><i class="fas fa-check-circle"></i> 1 Month Basic Support</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <a href="contact.html" class="btn">Get Started</a>
+                </div>
+            </div>
+
+            <div class="pricing-card featured slide-up">
+                <div class="popular-badge">Most Popular</div>
+                <div class="card-header">
+                    <h3>Pro Plan</h3>
+                    <p>Ideal for businesses looking for performance and scalability</p>
+                    <div class="price">
+                        <span>$800–$1,500</span>
+                        <span>KES 100,000–190,000</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 6–10 Pages or Dynamic CMS</li>
+                        <li><i class="fas fa-check-circle"></i> Admin Dashboard</li>
+                        <li><i class="fas fa-check-circle"></i> E-commerce Integration</li>
+                        <li><i class="fas fa-check-circle"></i> Payment Gateways (M-Pesa, Cards, Crypto)</li>
+                        <li><i class="fas fa-check-circle"></i> 2 Revisions</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
+                        <li><i class="fas fa-check-circle"></i> 3 Months Standard Support</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <a href="contact.html" class="btn">Choose Plan</a>
+                </div>
+            </div>
+
+            <div class="pricing-card slide-up">
+                <div class="card-header">
+                    <h3>Custom Plan</h3>
+                    <p>For startups, SaaS platforms, AI bots, crypto tools, or game projects</p>
+                    <div class="price">
+                        <span>Starting at $2,000+</span>
+                        <span>KES 250,000+</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Full-stack App or Game Development</li>
+                        <li><i class="fas fa-check-circle"></i> API Integrations</li>
+                        <li><i class="fas fa-check-circle"></i> Custom Trading Bots or AI Tools</li>
+                        <li><i class="fas fa-check-circle"></i> Ongoing Support & Updates</li>
+                        <li><i class="fas fa-check-circle"></i> Scalable Architecture</li>
+                        <li><i class="fas fa-check-circle"></i> Priority Delivery</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated Project Manager</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <a href="contact.html" class="btn">Request Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-cta">
+            <div class="container">
+                <div class="cta-content slide-up">
+                    <h2>Need a tailored quote?</h2>
+                    <p>Every project is unique. Request a free quote or book a call to discuss your specific requirements.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Get Custom Quote</a>
+                        <a href="https://calendly.com/techsolutionskenya" class="btn btn-secondary">Book a Call</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-faq">
+            <div class="container">
+                <h2 class="slide-up">Pricing FAQs</h2>
+                <div class="faq-item slide-up">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept M-Pesa, bank transfers (local and international), PayPal, and cryptocurrency (BTC, USDT). Payments can be made in USD or KES equivalent.</p>
+                    </div>
+                </div>
+                <div class="faq-item slide-up">
+                    <div class="faq-question">
+                        <h3>Do you offer payment plans?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We typically work on a 50/50 payment structure (50% upfront, 50% on delivery). For larger projects, we can arrange milestone-based payments.</p>
+                    </div>
+                </div>
+                <div class="faq-item slide-up">
+                    <div class="faq-question">
+                        <h3>What's included in the support period?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our support includes bug fixes, minor adjustments, and troubleshooting. Major feature additions would be quoted separately. Response times vary by plan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TechAscent<span>KE</span></h3>
+                    <p>Building digital solutions that drive growth, innovation, and success for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Game Development</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">AI Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://techsolutionskenya.vercel.app">Home</a></li>
+                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="contact-us#careers-form">Careers</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact-us">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 721 991529</li>
+                        <li><i class="fas fa-envelope"></i> stanleymakanga45@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Ascent Kenya. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy">Privacy Policy</a>
+                    <a href="terms-of-service">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="pricing.js"></script>
+</body>
+</html>
